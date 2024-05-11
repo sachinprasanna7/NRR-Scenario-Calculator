@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# NRR-Helper
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app helps people to calculate Net Run Rate (NRR), and also analyse how the Net Run Rate will behave in different scenarios. The Net Run Rate of a team in a match is calculated by deducting the number of runs conceded by that team per over in that tie from the average number of runs it scores per over in that contest. So, essentially, it's the run rate of that team in the match minus the run rate of the opposition team. 
 
-## Available Scripts
+# Terms Related to Net Run Rate
 
-In the project directory, you can run:
+## FOR
 
-### `npm start`
+The "FOR" term in Net Run Rate refers to the performance metrics of the team in focus. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### For Runs
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+"For Runs" indicates the total number of runs scored by the team in the league.
 
-### `npm test`
+### For Overs
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+"For Overs" indicates the total number of overs bowled by the team in the league.
 
-### `npm run build`
+## AGAINST
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The "AGAINST" term in Net Run Rate refers to the performance metrics of the opposing team.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Against Runs
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+"Against Runs" indicates the total number of runs scored against the team in the league.
 
-### `npm run eject`
+### Against Overs
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+"Against Overs" indicates the total number of overs bowled against the team in the league.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Example
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+For example, A FOR of 2232/209.0 and AGAINST of 1996/216.2 means the following:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- FOR Runs: 2232
+- FOR Overs: 209.0
+- AGAINST Runs: 1996
+- AGAINST Overs: 216.2
 
-## Learn More
+To calculate the NRR using these metrics, follow these steps:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Calculate the run rate for the team:
+   - For Team: FOR Runs / FOR Overs = 2232 / 209.0 = 10.67 runs per over
+   - Against Team: AGAINST Runs / AGAINST Overs = 1996 / 216.2 = 9.23 runs per over
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Deduct the run rate of the opposing team from the run rate of the team in focus:
+   - NRR = (For Team Run Rate) - (Against Team Run Rate)
+   - NRR = 10.67 - 9.23 = 1.44
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+So, the Net Run Rate (NRR) for the team in consideration is 1.44.
