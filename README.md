@@ -4,29 +4,17 @@ This app helps people to calculate Net Run Rate (NRR), and also analyse how the 
 
 # Terms Related to Net Run Rate
 
-## FOR
+- **FOR:** The "FOR" term in Net Run Rate refers to the performance metrics of the team in focus. 
 
-The "FOR" term in Net Run Rate refers to the performance metrics of the team in focus. 
+  - **For Runs:** "For Runs" indicates the total number of runs scored by the team in the league.
 
-### For Runs
+  - **For Overs:** "For Overs" indicates the total number of overs bowled by the team in the league.
 
-"For Runs" indicates the total number of runs scored by the team in the league.
+- **AGAINST:** The "AGAINST" term in Net Run Rate refers to the performance metrics of the opposing team.
 
-### For Overs
+  - **Against Runs:** "Against Runs" indicates the total number of runs scored against the team in the league.
 
-"For Overs" indicates the total number of overs bowled by the team in the league.
-
-## AGAINST
-
-The "AGAINST" term in Net Run Rate refers to the performance metrics of the opposing team.
-
-### Against Runs
-
-"Against Runs" indicates the total number of runs scored against the team in the league.
-
-### Against Overs
-
-"Against Overs" indicates the total number of overs bowled against the team in the league.
+  - **Against Overs:** "Against Overs" indicates the total number of overs bowled against the team in the league.
 
 ## Example
 
