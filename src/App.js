@@ -1,6 +1,11 @@
 import React, {useState} from 'react';
-import UserInput from './components/userInput.js';
 import Navbar from './components/navbar.js';
+import BattingFirst from './components/battingFirst.js';
+import BattingSecond from './components/battingSecond.js';
+import Help from './components/help.js';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Calculator from './components/calculator.js';
 
 
 function App() {
@@ -11,19 +16,11 @@ function App() {
   const [againstOvers, setAgainstOvers] = useState(0);
   const [nrr, setNRR] = useState(0);
   const [isValid, setIsValid] = useState(true);
-  const [currentPage, setCurrentPage] = useState('home');
+  const [currentPage, setCurrentPage] = useState('calculator');
 
-  const handleFirstBattingClick = () => {
-    setCurrentPage('firstBatting');
-  }
-
-  const handleSecondBattingClick = () => {
-    setCurrentPage('secondBatting');
-  }
-
-  const handleHomeClick = () => {
-    setCurrentPage('home');
-  }
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
 
 
   const calculateOversInBalls = (overs) => {
@@ -104,13 +101,17 @@ function App() {
 
   return (
     <>
-    <Navbar />
-    <UserInput team = "for" type = "runs" onChange = {handleInputChange}/>
-    <UserInput team = "for" type = "overs" onChange = {handleInputChange} />
-    <UserInput team = "against" type = "runs" onChange = {handleInputChange} />
-    <UserInput team = "against" type = "overs" onChange = {handleInputChange} />
-    <button type="button" onClick = {calculateNRR} className="btn btn-primary">Calculate</button>
-    <h2>{`Net Run Rate: ${nrr}`}</h2>
+    <Router>
+    <Navbar title="NRR-Help"/>
+    <div className="container my-3">
+    <Routes>
+          <Route exact path="/BattingFirst" element = {<BattingFirst/>}/>
+          <Route exact path="/BattingSecond" element = {<BattingSecond/>}/>
+          <Route exact path="/Help" element = {<Help/>}/>
+          <Route exact path="/" element = {<Calculator/>}/>
+    </Routes>
+    </div>
+    </Router>
 
     </>
   );
