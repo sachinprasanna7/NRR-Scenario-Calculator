@@ -1,4 +1,4 @@
-# NRR-Helper
+# NRR-Scenario-Calculator
 
 This app helps people to calculate Net Run Rate (NRR), and also analyse how the Net Run Rate will behave in different scenarios. The Net Run Rate of a team in a match is calculated by deducting the number of runs conceded by that team per over in that tie from the average number of runs it scores per over in that contest. So, essentially, it's the run rate of that team in the match minus the run rate of the opposition team. 
 
@@ -36,3 +36,28 @@ To calculate the NRR using these metrics, follow these steps:
    - NRR = 10.67 - 9.23 = 1.44
 
 So, the Net Run Rate (NRR) for the team in consideration is 1.44.
+
+
+# App Features
+
+## Calculator
+
+Input the FOR and AGAINST of the team you want to calculate the Net Run Rate of and you will get the Net Run Rate!
+
+## Batting First Scenario Calculator
+
+Imagine your team has batted first and scored X runs. If you want to know by how much your teams Net Run Rate will increase or decrease based on how on how many runs the opponent team loses by or by how many overs to spare the opponent team wins by, then use this calculator.
+
+Just input the parameters before the game and the runs scored by your team into the calculator!
+
+## Batting Second Scenario Calculator
+
+Imagine the opponent team has batted first and scored X runs. If you want to know by how much your teams Net Run Rate will increase or decrease based on how many overs and how many runs your team scores when chasing the target down, then use this calculator.
+
+Just input the parameters before the game and the runs scored by the opponent team into the calculator!
+
+## App Interface
+
+![Example](Example.png)
+
+
