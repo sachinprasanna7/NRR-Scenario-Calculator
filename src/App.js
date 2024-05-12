@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Navbar from './components/navbar.js';
 import BattingFirst from './components/battingFirst.js';
 import BattingSecond from './components/battingSecond.js';
+import CompleteBattingSecond from './components/completeCalculatorChasing.js';
 import Help from './components/help.js';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -107,6 +108,7 @@ function App() {
     <Routes>
           <Route exact path="/BattingFirst" element = {<BattingFirst/>}/>
           <Route exact path="/BattingSecond" element = {<BattingSecond/>}/>
+          <Route exact path="/CompleteBattingSecond" element = {<CompleteBattingSecond/>}/>
           <Route exact path="/Help" element = {<Help/>}/>
           <Route exact path="/" element = {<Calculator/>}/>
     </Routes>

@@ -24,6 +24,7 @@ function Navbar(props) {
                                 <ul className="dropdown-menu">
                                     <li><Link className="dropdown-item" to="/BattingFirst">Batting First</Link></li>
                                     <li><Link className="dropdown-item" to="/BattingSecond">Batting Second</Link></li>
+                                    <li><Link className="dropdown-item" to="/CompleteBattingSecond">Complete Batting Second</Link></li>
                                     <li><hr className="dropdown-divider"/></li>
                                     <li><Link className="dropdown-item" to="/Help">Help</Link></li>
                                 </ul>
